@@ -59,7 +59,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-farhatamann-designerhub-wvl0ehiips6.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST'), 'localhost','8000-farhatamann-designerhub-wvl0ehiips6.ws.codeinstitute-ide.net']
 
 
 # Application definition
