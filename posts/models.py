@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from category.models import Category
+from category.models import Category, Categories 
 
 class Post(models.Model):
     """
@@ -35,7 +35,8 @@ class Post(models.Model):
     image_filter = models.CharField(
         max_length=32, choices=image_filter_choices, default='normal'
     )
-    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True)
+    category = models.CharField(max_length=50, choices=Categories.choices,
+                                default=Categories.CASUAL)
     class Meta:
         ordering = ['-created_at']
 
