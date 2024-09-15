@@ -8,8 +8,7 @@ class Categories(models.TextChoices):
 class Category(models.Model):
     name = models.CharField(
         max_length=50,
-        choices=Categories.choices,  
-        default=Categories.CASUAL  
+        choices=Categories.choices,
     )
 
     class Meta:
