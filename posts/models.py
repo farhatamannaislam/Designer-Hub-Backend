@@ -35,12 +35,9 @@ class Post(models.Model):
     image_filter = models.CharField(
         max_length=32, choices=image_filter_choices, default='normal'
     )
-    #category = models.CharField(max_length=50, choices=Categories.choices,
+    category = models.CharField(max_length=50, choices=Categories.choices,
                                 #default=Categories.FORMAL)
-    category = models.ForeignKey(
-    Category,
-    on_delete=models.SET_DEFAULT,
-    default=1 
+ 
 )
 
     class Meta:
