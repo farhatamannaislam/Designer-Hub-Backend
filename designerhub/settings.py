@@ -91,6 +91,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'dj_rest_auth.registration',
     'corsheaders',
+    'taggit',
 
     'profiles',
     'posts',
@@ -99,6 +100,7 @@ INSTALLED_APPS = [
     'followers',
     'category',
     'notification',
+    'events',
 ]
 
 SITE_ID = 1
