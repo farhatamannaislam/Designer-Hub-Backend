@@ -34,7 +34,11 @@ I have the following models:
 
 # Data model Diagram
 
-I drew my data model schema using [DrawSQL](https://drawsql.app/)
+I drew my data model schema using [DrawSQL](https://drawsql.app/).
+The table is given below, along with all of the different relationships they had with each other.
+
+My datamodel is given here 
+![Data Model](docs/readme/images/DataModel.png)
 
 
 
