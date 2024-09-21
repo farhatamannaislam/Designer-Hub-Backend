@@ -40,5 +40,26 @@ The table is given below, along with all of the different relationships they had
 My datamodel is given here 
 ![Data Model](docs/readme/images/DataModel.png)
 
+# API Endpoints
+
+My API endpoints is given here 
+![API endpoints](docs/readme/images/APIendpoints.png)
+
+# Frameworks, libraries and dependencies
+
+* Framework - This project was made using Django and Django Rest Framework. 
+* Database -  PostgreSQL has been used for data storage.
+* Authentication - Django's built in authentication systems such as dj-allauth, dj-rest-auth as well as JSON web token
+* Login/Logout - REST API endpoints for login and logout.
+* Filtering - django-filter
+* Cross-Origin-Resource Sharing - The django apps includes Cross-Origin-Resource Sharing (CORS) headers to enable API to
+ respond to requests other than its host.
+
+
+Testing
+
+All the testing related information are found on [Testing.md] (Testing.md)
+
+
 
 
