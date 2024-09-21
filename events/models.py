@@ -5,6 +5,9 @@ from taggit.managers import TaggableManager
 
 
 class Event(models.Model):
+    """
+    Event model, related to 'owner', i.e. a User instance.
+    """
 
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)

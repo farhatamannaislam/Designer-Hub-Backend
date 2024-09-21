@@ -3,6 +3,9 @@ from django.db import models
 
 
 class Notification(models.Model):
+    """
+    Notification model for user which consists of like, comment and follower
+    """
     TYPE_CHOICES = (
         ("comment", "Comment"),
         ("like", "Like"),
