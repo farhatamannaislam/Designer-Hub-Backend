@@ -171,3 +171,6 @@ If user tries to create a post without title it will show HTTP 400 Bad Request e
 
 ![Create Post without title error](docs/readme/images/postwithouttitleerror.png)
 
+# Python validation
+
+All python files except settings.py has been testes via [CI Python Linter](https://pep8ci.herokuapp.com/). The codes are error free.
