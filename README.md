@@ -58,7 +58,7 @@ My API endpoints is given here
 
 Testing
 
-All the testing related information are found on [Testing.md] (Testing.md)
+All the testing related information are found on [TESTING.md](./TESTING.md) file.
 
 
 
