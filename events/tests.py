@@ -3,6 +3,7 @@ from .models import Event
 from rest_framework import status
 from rest_framework.test import APITestCase
 
+
 class EventListViewTests(APITestCase):
     """
     Tests for the Event model list view
@@ -12,12 +13,25 @@ class EventListViewTests(APITestCase):
 
     def test_can_list_events(self):
         adam = User.objects.get(username='adam')
-        Event.objects.create(owner=adam, title='event title', event_date='2024-10-20', description="Event description")
+        Event.objects.create(
+            owner=adam,
+            title='event title',
+            event_date='2024-10-20',
+            description="Event description"
+        )
+
         response = self.client.get('/events/')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_logged_out_user_cant_create_event(self):
-        response = self.client.post('/events/', {'title': 'a title', 'event_date': '2024-10-20', 'description': 'A description'})
+        response = self.client.post(
+            '/events/', 
+            {
+                'title': 'a title',
+                'event_date': '2024-10-20',
+                'description': 'A description'
+            }
+        )
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
         count = Event.objects.count()
         self.assertEqual(count, 0)
@@ -35,7 +49,6 @@ class EventListViewTests(APITestCase):
         count = Event.objects.count()
         self.assertEqual(count, 1)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
-
 
 
 class EventDetailViewTests(APITestCase):
@@ -108,4 +121,3 @@ class EventDetailViewTests(APITestCase):
         self.client.login(username='adam', password='pass')
         response = self.client.delete('/events/2/')
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
-

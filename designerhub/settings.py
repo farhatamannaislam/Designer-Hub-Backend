@@ -63,13 +63,10 @@ REST_AUTH_SERIALIZERS = {
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = 'DEBUG' in os.environ
 
-#DEBUG = os.environ.get("DEBUG")
-DEBUG = True
+DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST'), 'localhost','8000-farhatamann-designerhub-sjjee190rlk.ws.codeinstitute-ide.net']
-
 
 # Application definition
 

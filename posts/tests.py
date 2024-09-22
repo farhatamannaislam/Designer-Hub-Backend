@@ -3,6 +3,7 @@ from .models import Post
 from rest_framework import status
 from rest_framework.test import APITestCase
 
+
 class PostListViewTests(APITestCase):
     def setUp(self):
         User.objects.create_user(username='adam', password='pass')
@@ -26,15 +27,23 @@ class PostListViewTests(APITestCase):
         response = self.client.post('/posts/', {'title': 'a title'})
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
 
+
 class PostDetailViewTests(APITestCase):
     def setUp(self):
         adam = User.objects.create_user(username='adam', password='pass')
         brian = User.objects.create_user(username='brian', password='pass')
+        
         Post.objects.create(
-            owner=adam, title='a title', content='adams content' , category='formal'
+            owner=adam,
+            title='a title',
+            content='adams content',
+            category='formal'
         )
         Post.objects.create(
-            owner=brian, title='another title', content='brians content', category='formal'
+            owner=brian,
+            title='another title',
+            content='brians content',
+            category='formal'
         )
 
     def test_can_retrieve_post_using_valid_id(self):

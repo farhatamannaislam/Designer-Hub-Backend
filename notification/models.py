@@ -21,11 +21,7 @@ class Notification(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     read = models.BooleanField(default=False)
     notification_type = models.CharField(max_length=10, choices=TYPE_CHOICES)
-    
-   
     related_object_id = models.PositiveIntegerField()
-
-
     related_post = models.ForeignKey(
         'posts.Post',  
         on_delete=models.CASCADE,
@@ -38,7 +34,10 @@ class Notification(models.Model):
     )
     
     def __str__(self):
-        return f"{self.recipient.username} - {self.notification_type} - {self.created_at}"
+        return (
+            f"{self.recipient.username} - {self.notification_type} - "
+            f"{self.created_at}"
+        )
 
     class Meta:
         ordering = ['-created_at']

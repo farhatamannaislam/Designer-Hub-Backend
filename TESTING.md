@@ -170,3 +170,4 @@ If user try to retrieve a post by wrong ID it will show HTTP 404 Not Found error
 If user tries to create a post without title it will show HTTP 400 Bad Request error.
 
 ![Create Post without title error](docs/readme/images/postwithouttitleerror.png)
+

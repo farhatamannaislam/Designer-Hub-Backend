@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from category.models import Category, Categories 
 
+
 class Post(models.Model):
     """
     Post model, related to 'owner', i.e. a User instance.
@@ -37,7 +38,6 @@ class Post(models.Model):
     )
     category = models.CharField(max_length=50, choices=Categories.choices,
                                 default=Categories.FORMAL)
- 
 
     class Meta:
         ordering = ['-created_at']

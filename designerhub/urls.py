@@ -35,3 +35,4 @@ urlpatterns = [
     path('', include('notification.urls')),
     path("", include("events.urls")),
 ]
+

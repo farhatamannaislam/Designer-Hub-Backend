@@ -3,6 +3,7 @@ from rest_framework import generics
 from .models import Notification
 from .serializers import NotificationSerializer
 
+
 class NotificationList(generics.ListAPIView):
     """
     List of notifications view for authenticated user.
@@ -13,6 +14,7 @@ class NotificationList(generics.ListAPIView):
 
     def get_queryset(self):
         return self.queryset.filter(recipient=self.request.user)
+
 
 class NotificationUpdate(generics.UpdateAPIView):
     """

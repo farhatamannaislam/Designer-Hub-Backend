@@ -1,9 +1,11 @@
 from django.db import models
 
+
 class Categories(models.TextChoices):
     FORMAL = 'formal', 'Formal'
     CASUAL = 'casual', 'Casual'
     PARTY = 'party', 'Party'
+
 
 class Category(models.Model):
     name = models.CharField(
