@@ -86,3 +86,87 @@ If a logged-in user tries to like the same post twice, the API should return an 
 ![Like a Post twice error](docs/readme/images/likingsameposttwiceerror.png)
 
 ## Profile App
+
+Profile list can be viewed by both logged in and logged out users.
+
+![Profiles logged in view](docs/readme/images/profilesloggedin.png)
+
+![Profiles logged out view](docs/readme/images/profilesloggedout.png)
+
+If user is the owner he can edit his profile by retrieving the profile by ID.
+
+![Retrieve Profile by ID](docs/readme/images/retrieveprofilebyId.png)
+
+An invalid ID will show 404 error message.
+
+![Invalid Profile ID](docs/readme/images/InvalidIdprofile.png)
+
+## Category App
+
+Logged in user can make a post with selecting the catagory.
+
+![Select Category](docs/readme/images/selectcategory.png)
+
+## Notifications App
+
+Logged in user can see his notifications.
+
+![Logged in Notification View](docs/readme/images/loggedinNotificationview.png)
+
+Logged out user can not see any notification.
+
+![Logged out Notification View](docs/readme/images/loggedoutnotificationview.png)
+
+## Events App
+
+Logged out users can see event list without the option of adding a new event.
+
+![Event view for logged out users](docs/readme/images/loggedouteventview.png)
+
+Logged-in user can see a list of events and  has the option to create an event.
+
+![Event view for logged in users](docs/readme/images/loggedineventview.png)
+
+
+Event can be retrieved by its ID and if the user is the author he can edit or delete it.
+
+![Retrieve Event by ID](docs/readme/images/eventretrievedbyID.png)
+
+But if user is not the author he can not edit or delete it.
+
+![Retrieve Event by not the owner](docs/readme/images/eventtretrievedbynotowner.png)
+
+If user try to retrieve an event by wrong ID it will show HTTP 404 Not Found error.
+
+![Retrieve Event by wrong ID error](docs/readme/images/wrongIdeventerror.png)
+
+If user tries to create an event without title, date and tag it will show error.
+
+![Event error without mandatory fields](docs/readme/images/eventerrorwithoutmandatoryfields.png)
+
+
+## Post App
+
+Logged out users can see post list without the option of adding a new event.
+
+![Post view for logged out users](docs/readme/images/loggedoutpostview.png)
+
+Logged-in user can see a list of posts and  has the option to create a post.
+
+![Post view for logged in users](docs/readme/images/loggedinpostview.png)
+
+Post can be retrieved by its ID and if the user is the author he can edit or delete it.
+
+![Retrieve Post by ID](docs/readme/images/retrievepostbyID.png)
+
+But if user is not the author he can not edit or delete it.
+
+![Retrieve Post by not the owner](docs/readme/images/retrievepostbynotauthor.png)
+
+If user try to retrieve a post by wrong ID it will show HTTP 404 Not Found error.
+
+![Retrieve Post by wrong ID error](docs/readme/images/wrongIdPosterror.png)
+
+If user tries to create a post without title it will show HTTP 400 Bad Request error.
+
+![Create Post without title error](docs/readme/images/postwithouttitleerror.png)
