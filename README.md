@@ -94,6 +94,6 @@ All the testing related information are found on [TESTING.md](./TESTING.md) file
 * [Django Rest Documentation](https://www.django-rest-framework.org/)
 * [Stack Overflow](https://try.stackoverflow.co/explore-teams?utm_source=adwords&utm_medium=ppc&utm_campaign=kb_teams_search_brand_emea-dach&_bt=657236278306&_bk=stack+overflow&_bm=p&_bn=g&gad_source=1&gclid=Cj0KCQjwgL-3BhDnARIsAL6KZ6_pwoKORZsa1lTx6qiGV0lVk8z-umBVQtsd4hOOPy8zZCwGjcXPVuIaAr_0EALw_wcB)
 * Code Institute Tutors and slack Community for their support, guiding and valuable information.
-* My  entor Antonio Rodriguez for his precious guidance and advice.
+* My  Mentor Antonio Rodriguez for his precious guidance and advice.
 
 
