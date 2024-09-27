@@ -4,6 +4,8 @@ Designer Hub is a website created as a social media app for Designers. Here desi
 
 The live API can be found [here](https://designerhubbackend-ebd8c03488fb.herokuapp.com/)
 
+This README is for my Backend. More information about frontend could be found [here](https://github.com/farhatamannaislam/designer-hub-frontend)
+
 # Agile Development
 
 The project was created based on user stories . The user stories are given here:
